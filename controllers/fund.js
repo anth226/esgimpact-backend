@@ -10,8 +10,7 @@ const Fund = require("../models/Fund");
  * @param {String} description
  * @param {String} mission_statement
  * @param {String} website
- * @param {Array} sics_codes
- * @param {String} primary_products
+ * @param {Array} primary_industry
  * @param {String} number_employees
  * @param {String} primary_address
  * @param {Array} other_addresses

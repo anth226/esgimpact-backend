@@ -45,7 +45,7 @@ function userEVFactory(recipient, name, token) {
 }
 
 function userFPFactory(token) {
-  const link = `${mainURL}/reset-password/user/${token}`;
+  const link = `${mainURL}/auth/reset-password/user/${token}`;
   const mailData = { link };
   const template = fs.readFileSync("template/UserFP.html", {
     encoding: "utf-8",

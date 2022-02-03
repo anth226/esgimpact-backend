@@ -10,7 +10,7 @@ const FundSchema = new Schema({
   description: { type: String },
   mission_statement: { type: String },
   website: { type: String },
-  sics_codes: { type: String },
+  primary_industry: { type: String },
   number_employees: { type: String },
   primary_address: { type: String },
   other_addresses: { type: String },
