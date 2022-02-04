@@ -10,7 +10,7 @@ const Company = require("../models/Company");
  * @param {String} description
  * @param {String} mission_statement
  * @param {String} company_website
- * @param {Array} sics_codes
+ * @param {Array} primary_industry
  * @param {String} primary_products
  * @param {String} number_employees
  * @param {String} primary_address
@@ -23,6 +23,12 @@ const Company = require("../models/Company");
  */
 exports.createCompany = async (req, res) => {
   try {
+    if(typeof req.body.ttm_revenue=='number') {
+      return res.status(200).json({
+        status : 0,
+        message : "Our pricing model will be based on their TTM revenue in the future"
+      })
+    }
     let newCompany = new Company(req.body);
 
     let company = await newCompany.save();
