@@ -10,14 +10,15 @@ const Company = require("../models/Company");
  * @param {String} description
  * @param {String} mission_statement
  * @param {String} company_website
- * @param {Array} sics_codes
+ * @param {String} primary_industry
+ * @param {Array} secondary_industry
  * @param {String} primary_products
  * @param {String} number_employees
  * @param {String} primary_address
  * @param {Array} other_addresses
- * @param {Array} operating_countries
+ * @param {String} operating_countries
  * @param {Array} operating_currencies
- * @param {String} ttm_revenue
+ * @param {Number} ttm_revenue
  * @param {String} ttm_revenue_currency
  * @param {String} net_positive
  */
